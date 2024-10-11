@@ -1,63 +1,63 @@
-
 [
-{
-    "id":"aries",
-    "nome": "Áries",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"taurus",
-    "nome": "Touro",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"gemini",
-    "nome": "Gêmeos",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"cancer",
-    "nome": "Câncer",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"leo",
-    "nome": "Leão",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"virgo",
-    "nome": "Virgem",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"libra",
-    "nome": "Libra",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"scorpio",
-    "nome": "Escorpião",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"sagittarius",
-    "nome": "Sagitário",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"capricorn",
-    "nome": "Capricórnio",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"aquarius",
-    "nome": "Aquário",
-    "image":"../src/assets/apache.jpg"
-},
-{
-    "id":"pisces",
-    "nome": "Peixes",
-    "image":"../src/assets/apache.jpg"
-}
-]
+    {
+      "id": "aries",
+      "nome": "Áries",
+      "image": "../src/assets/aries.jpg"
+    },
+    {
+      "id": "taurus",
+      "nome": "Touro",
+      "image": "../src/assets/taurus.jpg"
+    },
+    {
+      "id": "gemini",
+      "nome": "Gêmeos",
+      "image": "../src/assets/gemini.jpg"
+    },
+    {
+      "id": "cancer",
+      "nome": "Câncer",
+      "image": "../src/assets/cancer.jpg"
+    },
+    {
+      "id": "leo",
+      "nome": "Leão",
+      "image": "../src/assets/leo.jpg"
+    },
+    {
+      "id": "virgo",
+      "nome": "Virgem",
+      "image": "../src/assets/virgo.jpg"
+    },
+    {
+      "id": "libra",
+      "nome": "Libra",
+      "image": "../src/assets/libra.jpg"
+    },
+    {
+      "id": "scorpio",
+      "nome": "Escorpião",
+      "image": "../src/assets/scorpio.jpg"
+    },
+    {
+      "id": "sagittarius",
+      "nome": "Sagitário",
+      "image": "../src/assets/sagittarius.jpg"
+    },
+    {
+      "id": "capricorn",
+      "nome": "Capricórnio",
+      "image": "../src/assets/capricorn.jpg"
+    },
+    {
+      "id": "aquarius",
+      "nome": "Aquário",
+      "image": "../src/assets/aquarius.jpg"
+    },
+    {
+      "id": "pisces",
+      "nome": "Peixes",
+      "image": "../src/assets/pisces.jpg"
+    }
+  ]
+  

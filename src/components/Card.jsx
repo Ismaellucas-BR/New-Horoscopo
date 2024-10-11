@@ -1,13 +1,16 @@
-import React from 'react'
-import Data from '../../data/signos.json'
-function Card() {
+// /components/Card.js
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Card({ card }) {
   return (
-    Data.map((signo)=>{
-        <div key={signo.id}>
-            <h1>{signo.name}</h1>
-        </div>
-    })
-  )
+    <div style={{ border: '1px solid #ccc', padding: '20px' }}>
+      <img src={card.image} alt={card.title} style={{ width: '150px', height: '150px' }} />
+      <h2>{card.title}</h2>
+      <p>{card.description}</p>
+      <Link to={`/card/${card.id}`}>Ver Horóscopo</Link>
+    </div>
+  );
 }
 
-export default Card
+export default Card;

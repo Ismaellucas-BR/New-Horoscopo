@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 
+// Pega diretamente a variável de ambiente como string
+const API_KEY = "f711fcaa-58f4-48b9-ae2e-d8d72baab6c8";
+
 function Api() {
   const [horoscope, setHoroscope] = useState('');
   const [sign, setSign] = useState('aries');
 
   const getHoroscope = () => {
+    console.log(API_KEY);  // Verifica se está imprimindo a chave da API
     const url = `https://api.apiverve.com/v1/horoscope?sign=${sign}`;
 
     fetch(url, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.REACT_APP_API_KEY}`, // Chave da API
+        'Authorization': `Bearer ${API_KEY}`, // Usando a chave da API
       },
     })
       .then((response) => {
@@ -29,11 +33,11 @@ function Api() {
         setHoroscope('Não foi possível obter o horóscopo. Tente novamente mais tarde.');
       });
   };
-
+  getHoroscope()
   return (
     <div>
       <h1>Horóscopo do Dia</h1>
-      <select value={sign} onChange={(e) => setSign(e.target.value)}>
+      <select value={sign} onChange={(e) => setSign(e.target.options[e.target.selectedIndex].text)}>
         <option value="aries">Áries</option>
         <option value="taurus">Touro</option>
         <option value="gemini">Gêmeos</option>
@@ -50,7 +54,7 @@ function Api() {
       <button onClick={getHoroscope}>Ver Horóscopo</button>
 
       <div id="horoscopeResult" style={{ marginTop: '20px', color: 'white' }}>
-        <h2>Horóscopoo para {sign.charAt(0).toUpperCase() + sign.slice(1)}:</h2>
+        <h2>Horóscopo para {sign.charAt(0).toUpperCase() + sign.slice(1)}:</h2>
         <p>{horoscope}</p>
       </div>
     </div>
